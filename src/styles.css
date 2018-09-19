@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files 
+@import "~bootstrap/dist/css/bootstrap.css";
+*/
+ /*
+body {
+    padding-top: 80px;
+    }
+    .input-underline {
+        background: 0 0;
+        border: none;
+        box-shadow: none;
+        border-bottom: 2px solid rgba(8, 53, 104, 0.425);
+        color: rgb(32, 29, 29);
+        border-radius: 0;
+    }
+    .input-underline-register {
+        background:  rgba(202, 225, 252, 0.425) ;
+        border: none;
+        box-shadow: none;
+        border-bottom: 2px solid rgba(8, 53, 104, 0.425);
+        color: rgb(32, 29, 29);
+        border-radius: 0;
+    }
+    .user-avatar
+    {
+        padding:0px;
+        padding-top: 40px;
+    } */

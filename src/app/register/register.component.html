@@ -1,0 +1,33 @@
+<div class="col-md-4 col-lg-4 offset-md-4">
+  <div class="user-avatar">
+    <h2>Register</h2>
+  </div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(submitBtn)">
+    <div>
+      username:</div>
+    <div>
+      <input type="text" formControlName="userCode" class="form-control input-underline-register input-lg">
+    </div>
+    <div>
+      Password: </div>
+    <div>
+      <input type="password" formControlName="password" class="form-control input-underline-register input-lg">
+    </div>
+    <div>
+      Name:</div>
+    <div> <input type="text" formControlName="userName" class="form-control input-underline-register input-lg">
+    </div>
+    <div>
+      Surname: </div>
+    <div><input type="text" formControlName="userSurname" class="form-control input-underline-register input-lg">
+    </div>
+    <div>
+      Email:</div>
+    <div> <input type="email" formControlName="email" class="form-control input-underline-register input-lg">
+    </div>
+    <div>&nbsp;</div>
+    <div>
+      <button type="submit" #submitBtn class="btn btn-md btn-primary">Sign Up</button>
+    </div>
+  </form>
+</div>

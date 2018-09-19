@@ -1,0 +1,52 @@
+<ul class="nav nav-list">
+  <li *ngFor="let menu of listMenus" routerLinkActive="active">
+    <a href="#" [routerLink]="[menu.menuUrl]">
+      <i class="menu-icon fa {{menu.menuIcon}}"></i>
+      <span class="menu-text"> {{menu.menuText}} </span>
+    </a>
+    <b class="arrow"></b>
+  </li>
+</ul>
+<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+  <i id="sidebar-toggle-icon" class="ace-save-state ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"
+    data-icon2="ace-icon fa fa-angle-double-right"></i>
+</div>
+
+
+<!--
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" *ngFor="let menu of listMenus"> 
+        <a class="nav-link" [routerLink]="[menu.menuUrl]">{{menu.menuText}}</a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" routerLink="">home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/supplier">Supplier</a>
+      </li>
+    
+    </ul>
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+        <i class="fa fa-user-circle"></i> {{userLogin}}
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">profile</button>
+        <button class="dropdown-item" (click)="onLogout()">logout</button>
+      </div>
+    </div>
+
+  </div>
+</nav>   -->
